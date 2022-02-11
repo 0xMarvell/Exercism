@@ -15,7 +15,7 @@ func TotalBirdCount(birdsPerDay []int) int {
 // only the items belonging to the given week.
 func BirdsInWeek(birdsPerDay []int, week int) int {
 	//panic("Please implement the BirdsInWeek() function")
-
+	return TotalBirdCount(birdsPerDay[7*(week-1) : 7*week])
 }
 
 // FixBirdCountLog returns the bird counts after correcting
