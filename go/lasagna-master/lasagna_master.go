@@ -31,9 +31,9 @@ func Quantities(layers []string) (int, float64) {
 }
 
 // AddSecretIngredient adds the secret ingredient to your recipe
-// func AddSecretIngredient(friendsList, myList []string) {
-// 	myList[len(myList)-1] = friendsList[len(friendsList)-1]
-// }
+func AddSecretIngredient(friendsList, myList []string) {
+	myList[len(myList)-1] = friendsList[len(friendsList)-1]
+}
 
 // ScaleRecipe gives the amounts needed for the desired number of portions
 // func ScaleRecipe(amounts []float64, quantities int) []float64 {
