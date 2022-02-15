@@ -16,19 +16,19 @@ func PreparationTime(layers []string, time int) int {
 }
 
 // Quantities determines the quantity of noodles and sauce needed to make your meal
-// func Quantities(layers []string) (int, float64) {
-// 	noodleLayers := 0
-// 	sauceLayers := 0
-// 	for _, l := range layers {
-// 		switch l {
-// 		case "noodles":
-// 			noodleLayers++
-// 		case "sauce":
-// 			sauceLayers++
-// 		}
-// 	}
-// 	return noodleLayers * noodleQtyPerLayer, float64(sauceLayers) * sauceQtyPerLayer
-// }
+func Quantities(layers []string) (int, float64) {
+	noodleLayers := 0
+	sauceLayers := 0
+	for _, l := range layers {
+		switch l {
+		case "noodles":
+			noodleLayers++
+		case "sauce":
+			sauceLayers++
+		}
+	}
+	return noodleLayers * noodleQtyPerLayer, float64(sauceLayers) * sauceQtyPerLayer
+}
 
 // AddSecretIngredient adds the secret ingredient to your recipe
 // func AddSecretIngredient(friendsList, myList []string) {
