@@ -33,7 +33,6 @@ func AddItem(bill, units map[string]int, item, unit string) bool {
 
 // RemoveItem removes an item from customer bill.
 func RemoveItem(bill, units map[string]int, item, unit string) bool {
-	//panic("Please implement the RemoveItem() function")
 	if unitValue, ok := units[unit]; ok {
 		if billValue, ok := bill[item]; ok && billValue-unitValue >= 0 {
 			if newBillValue := billValue - unitValue; newBillValue != 0 {
