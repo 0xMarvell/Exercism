@@ -16,7 +16,6 @@ func Units() map[string]int {
 
 // NewBill creates a new bill.
 func NewBill() map[string]int {
-	//panic("Please implement the NewBill() function")
 	bill := make(map[string]int)
 	return bill
 }
