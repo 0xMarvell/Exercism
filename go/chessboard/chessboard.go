@@ -9,7 +9,6 @@ type Chessboard map[string]Rank
 // CountInRank returns how many squares are occupied in the chessboard,
 // within the given rank
 func CountInRank(cb Chessboard, rank string) int {
-	//panic("Please implement CountInRank()")
 	rankArr, rankExists := cb[rank]
 	occupiedSquares := 0
 
@@ -29,7 +28,6 @@ func CountInRank(cb Chessboard, rank string) int {
 // CountInFile returns how many squares are occupied in the chessboard,
 // within the given file
 func CountInFile(cb Chessboard, file int) int {
-	//panic("Please implement CountInFile()")
 	occupiedSquares := 0
 	if file < 1 || file > 8 {
 		return 0
@@ -46,13 +44,11 @@ func CountInFile(cb Chessboard, file int) int {
 
 // CountAll should count how many squares are present in the chessboard
 func CountAll(cb Chessboard) int {
-	//panic("Please implement CountAll()")
 	return len(cb) * len(cb)
 }
 
 // CountOccupied returns how many squares are occupied in the chessboard
 func CountOccupied(cb Chessboard) int {
-	//panic("Please implement CountOccupied()")
 	occupiedSquares := 0
 	for key := range cb {
 		occupiedSquares += CountInRank(cb, key)
