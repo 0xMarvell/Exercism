@@ -46,7 +46,8 @@ func CountInFile(cb Chessboard, file int) int {
 
 // CountAll should count how many squares are present in the chessboard
 func CountAll(cb Chessboard) int {
-	panic("Please implement CountAll()")
+	//panic("Please implement CountAll()")
+	return len(cb) * len(cb)
 }
 
 // CountOccupied returns how many squares are occupied in the chessboard
