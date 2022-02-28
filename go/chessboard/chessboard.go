@@ -1,13 +1,29 @@
 package chessboard
 
 // Declare a type named Rank which stores if a square is occupied by a piece - this will be a slice of bools
+type Rank []bool
 
 // Declare a type named Chessboard which contains a map of eight Ranks, accessed with keys from "A" to "H"
+type Chessboard map[string]Rank
 
 // CountInRank returns how many squares are occupied in the chessboard,
 // within the given rank
 func CountInRank(cb Chessboard, rank string) int {
-	panic("Please implement CountInRank()")
+	//panic("Please implement CountInRank()")
+	rankArr, rankExists := cb[rank]
+	occupiedSquares := 0
+
+	if !rankExists {
+		return 0
+	}
+
+	for _, val := range rankArr {
+		if val {
+			occupiedSquares++
+		}
+	}
+	return occupiedSquares
+
 }
 
 // CountInFile returns how many squares are occupied in the chessboard,
