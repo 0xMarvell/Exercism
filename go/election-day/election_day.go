@@ -5,13 +5,11 @@ import "fmt"
 // NewVoteCounter returns a new vote counter with
 // a given number of inital votes.
 func NewVoteCounter(initialVotes int) *int {
-	//panic("Please implement the NewVoteCounter() function")
 	return &initialVotes
 }
 
 // VoteCount extracts the number of votes from a counter.
 func VoteCount(counter *int) int {
-	//panic("Please implement the VoteCount() function")
 	if counter == nil {
 		return 0
 	}
@@ -20,19 +18,16 @@ func VoteCount(counter *int) int {
 
 // IncrementVoteCount increments the value in a vote counter
 func IncrementVoteCount(counter *int, increment int) {
-	//panic("Please implement the IncrementVoteCount() function")
 	*counter += increment
 }
 
 // NewElectionResult creates a new election result
 func NewElectionResult(candidateName string, votes int) *ElectionResult {
-	//panic("Please implement the NewElectionResult() function")
 	return &ElectionResult{Name: candidateName, Votes: votes}
 }
 
 // DisplayResult creates a message with the result to be displayed
 func DisplayResult(result *ElectionResult) string {
-	//panic("Please implement the DisplayResult() function")
 	return fmt.Sprintf("%s (%d)", result.Name, result.Votes)
 }
 
