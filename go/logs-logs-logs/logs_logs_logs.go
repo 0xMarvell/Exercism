@@ -1,6 +1,8 @@
 package logs
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Application identifies the application emitting the given log.
 func Application(log string) string {
@@ -28,7 +30,19 @@ func Application(log string) string {
 // Replace replaces all occurrences of old with new, returning the modified log
 // to the caller.
 func Replace(log string, oldRune, newRune rune) string {
-	panic("Please implement the Replace() function")
+	//panic("Please implement the Replace() function")
+	var newLog string
+	oldRuneUnicode := fmt.Sprintf("%U", oldRune)
+
+	for _, val := range log {
+		u := fmt.Sprintf("%U", val)
+		if u == oldRuneUnicode {
+			newLog += string(newRune)
+		} else {
+			newLog += string(val)
+		}
+	}
+	return newLog
 }
 
 // WithinLimit determines whether or not the number of characters in log is
