@@ -16,5 +16,11 @@ func (c *Car) DisplayDistance() string {
 }
 
 // TODO: define the 'DisplayBattery() string' method
+func (c *Car) DisplayBattery() string {
+	return fmt.Sprintf("Battery at %d%%", c.battery)
+}
 
 // TODO: define the 'CanFinish(trackDistance int) bool' method
+func (c *Car) CanFinish() bool {
+
+}
