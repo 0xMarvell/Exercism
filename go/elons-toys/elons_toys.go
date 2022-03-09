@@ -12,7 +12,7 @@ func (c *Car) Drive() {
 
 // TODO: define the 'DisplayDistance() string' method
 func (c *Car) DisplayDistance() string {
-	return fmt.Sprintf("Driven %d metres", c.distance)
+	return fmt.Sprintf("Driven %d meters", c.distance)
 }
 
 // TODO: define the 'DisplayBattery() string' method
@@ -21,6 +21,10 @@ func (c *Car) DisplayBattery() string {
 }
 
 // TODO: define the 'CanFinish(trackDistance int) bool' method
-func (c *Car) CanFinish() bool {
+func (c *Car) CanFinish(trackDistance int) bool {
+	var time, carBattery int
+	time = trackDistance / c.speed
+	carBattery = c.battery - (time * c.batteryDrain)
 
+	return carBattery >= 0
 }
