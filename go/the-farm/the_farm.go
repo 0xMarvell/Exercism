@@ -18,7 +18,6 @@ func (e *SillyNephewError) Error() string {
 
 // DivideFood computes the fodder amount per cow for the given cows.
 func DivideFood(weightFodder WeightFodder, cows int) (float64, error) {
-	//panic("Please implement DivideFood")
 	amount, err := weightFodder.FodderAmount()
 	if err == ErrScaleMalfunction && amount > 0 {
 		amount *= 2
