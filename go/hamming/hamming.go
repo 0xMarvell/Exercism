@@ -11,7 +11,6 @@ func Distance(a, b string) (int, error) {
 			}
 		}
 		return hammingDistance, nil
-	} else {
-		return 0, errors.New("The DNA strands match. One may be longer than the other.")
 	}
+	return 0, errors.New("strands do not match")
 }
