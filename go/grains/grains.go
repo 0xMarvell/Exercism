@@ -11,5 +11,6 @@ func Square(number int) (uint64, error) {
 }
 
 func Total() uint64 {
-	panic("Please implement the Total function")
+	//panic("Please implement the Total function")
+	return 1<<64 - 1
 }
