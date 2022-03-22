@@ -6,7 +6,6 @@ import (
 )
 
 func Valid(id string) bool {
-	//panic("Please implement the Valid function")
 	id = strings.ReplaceAll(id, " ", "")
 
 	if len(id) < 2 {
