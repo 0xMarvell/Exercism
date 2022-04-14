@@ -28,22 +28,4 @@ func IsValidISBN(isbn string) bool {
 	}
 
 	return result%11 == 0
-
-	// s := strings.ReplaceAll(isbn, "-", "")
-	// if len(s) != 10 {
-	// 	return false
-	// }
-	// res := 0
-	// for i, v := range s {
-	// 	if i < 9 && unicode.IsLetter(v) {
-	// 		return false
-	// 	}
-	// dig := int(v - '0')
-	// if v == 'X' {
-	// 	dig = 10
-	// }
-	// 	res += dig * (10 - i)
-	// }
-	// return res%11 == 0
-
 }
