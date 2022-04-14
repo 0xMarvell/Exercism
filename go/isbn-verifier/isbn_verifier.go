@@ -11,7 +11,7 @@ func IsValidISBN(isbn string) bool {
 	newIsbn := strings.ReplaceAll(isbn, "-", "")
 	result := 0
 
-	if len(newIsbn) < 10 {
+	if len(newIsbn) != 10 {
 		return false
 	}
 
