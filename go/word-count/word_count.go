@@ -5,9 +5,6 @@ import "strings"
 type Frequency map[string]int
 
 func WordCount(phrase string) Frequency {
-	//panic("Please implement the WordCount function")
-	// newPhrase:=strings.ReplaceAll(phrase," ","")
-
 	// Convert all whitespace chars(\t, \n) to just spaces
 	newPhrase := strings.Replace(phrase, "\n", " ", -1)
 	newPhrase = strings.Replace(newPhrase, "\t", " ", -1)
