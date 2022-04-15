@@ -16,7 +16,8 @@ type DNA string
 // The receiver appears in its own argument list between the func keyword and the method name.
 // Here, the Counts method has a receiver of type DNA named d.
 func (d DNA) Counts() (Histogram, error) {
-	var h Histogram = Histogram{'A': 0, 'C': 0, 'G': 0, 'T': 0}
+	h := Histogram{'A': 0, 'C': 0, 'G': 0, 'T': 0}
+
 	for _, nucleotide := range d {
 		if _, ok := h[byte(nucleotide)]; ok {
 			h[byte(nucleotide)]++
