@@ -4,7 +4,6 @@ import "errors"
 
 // ToRomanNumeral converts a number to it's roman numeral equivalent
 func ToRomanNumeral(input int) (string, error) {
-	//panic("Please implement the ToRomanNumeral function")
 	aToR := []struct {
 		regular int
 		roman   string
@@ -21,12 +20,10 @@ func ToRomanNumeral(input int) (string, error) {
 
 	res := ""
 	for i := len(aToR) - 1; i >= 0; i-- {
-
 		for input >= aToR[i].regular {
 			input -= aToR[i].regular
 			res += aToR[i].roman
 		}
-
 	}
 
 	return res, nil
