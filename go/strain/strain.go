@@ -5,7 +5,14 @@ type Lists [][]int
 type Strings []string
 
 func (i Ints) Keep(filter func(int) bool) Ints {
-	panic("Please implement the Keep function")
+	//panic("Please implement the Keep function")
+	var collection Ints
+	for _, v := range i {
+		if filter(v) {
+			collection = append(collection, v)
+		}
+	}
+	return collection
 }
 
 func (i Ints) Discard(filter func(int) bool) Ints {
