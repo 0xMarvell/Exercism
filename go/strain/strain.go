@@ -31,5 +31,12 @@ func (l Lists) Keep(filter func([]int) bool) Lists {
 }
 
 func (s Strings) Keep(filter func(string) bool) Strings {
-	panic("Please implement the Keep function")
+	//panic("Please implement the Keep function")
+	var collection Strings
+	for _, v := range s {
+		if filter(v) {
+			collection = append(collection, v)
+		}
+	}
+	return collection
 }
