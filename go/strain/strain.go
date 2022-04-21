@@ -27,7 +27,14 @@ func (i Ints) Discard(filter func(int) bool) Ints {
 }
 
 func (l Lists) Keep(filter func([]int) bool) Lists {
-	panic("Please implement the Keep function")
+	//panic("Please implement the Keep function")
+	var collection Lists
+	for _, v := range l {
+		if filter(v) {
+			collection = append(collection, v)
+		}
+	}
+	return collection
 }
 
 func (s Strings) Keep(filter func(string) bool) Strings {
