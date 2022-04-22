@@ -2,6 +2,8 @@ package etl
 
 import "strings"
 
+// Transform transforms data from map into an array
+// then returns the data in new format
 func Transform(in map[int][]string) map[string]int {
 	//panic("Please implement the Transform function")
 	scrabble := make(map[string]int)
