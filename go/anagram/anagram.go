@@ -19,8 +19,8 @@ func Detect(subject string, candidates []string) []string {
 	return anagrams
 }
 
-// sortedString converts a string to a slice of string and sorts the elements
-// of the slice in ascending order the converts the sorted slice back into a string
+// sortedString converts a string to a slice of strings and sorts the elements
+// of the slice in ascending order then converts the sorted slice back into a string
 func sortedString(w string) string {
 	s := strings.Split(w, "")
 	sort.Strings(s)
