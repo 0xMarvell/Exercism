@@ -6,7 +6,6 @@ import (
 )
 
 func Detect(subject string, candidates []string) []string {
-	//panic("Please implement the Detect function")
 	var anagrams []string
 
 	for _, candidate := range candidates {
