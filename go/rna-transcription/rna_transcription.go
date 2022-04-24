@@ -1,5 +1,7 @@
+// Package starnd converts a DNA strand to an RNA strand
 package strand
 
+// ToRNA converts a DNA strand to its RNA equivalent
 func ToRNA(dna string) string {
 	rna := ""
 
