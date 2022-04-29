@@ -11,7 +11,6 @@ var ErrStop error = errors.New("STOP codon")
 var ErrInvalidBase error = errors.New("Invalid base")
 
 func FromRNA(rna string) ([]string, error) {
-	//panic("Please implement the FromRNA function")
 	var proteins []string
 
 	for i := 0; i < len(rna); i += 3 {
@@ -31,7 +30,6 @@ func FromRNA(rna string) ([]string, error) {
 }
 
 func FromCodon(codon string) (string, error) {
-	//panic("Please implement the FromCodon function")
 	var res string
 	var err error
 
