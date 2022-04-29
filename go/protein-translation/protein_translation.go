@@ -11,7 +11,23 @@ var ErrStop error = errors.New("STOP codon")
 var ErrInvalidBase error = errors.New("Invalid base")
 
 func FromRNA(rna string) ([]string, error) {
-	panic("Please implement the FromRNA function")
+	//panic("Please implement the FromRNA function")
+	var proteins []string
+
+	for i := 0; i < len(rna); i += 3 {
+		codon := rna[i : i+3]
+		protein, err := FromCodon(codon)
+		if err != nil {
+			switch err {
+			case ErrStop:
+				return proteins, nil
+			default:
+				return nil, err
+			}
+		}
+		proteins = append(proteins, protein)
+	}
+	return proteins, nil
 }
 
 func FromCodon(codon string) (string, error) {
