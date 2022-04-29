@@ -1,3 +1,4 @@
+// Package protein translates RNA sequences into proteins.
 package protein
 
 import (
@@ -10,6 +11,8 @@ var ErrStop error = errors.New("STOP codon")
 // ErrInvalidBase represents an invalid base that cannot me mapped to an amino acid.
 var ErrInvalidBase error = errors.New("Invalid base")
 
+// FromRNA translates an RNA-sequence into the proteins. If there is an invalid RNA-sequence
+// an error is returned.
 func FromRNA(rna string) ([]string, error) {
 	var proteins []string
 
@@ -29,6 +32,8 @@ func FromRNA(rna string) ([]string, error) {
 	return proteins, nil
 }
 
+// FromCodon translates a 3-letter codon into an amino acid. An error is returned if
+// the codon is a stop sequence or an invalid sequence.
 func FromCodon(codon string) (string, error) {
 	var res string
 	var err error
