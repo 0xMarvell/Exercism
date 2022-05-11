@@ -1,5 +1,7 @@
+// Package rotationalcipher implements a simple shift cipher
 package rotationalcipher
 
+// RotationalCipher encrypts a string using the caesar cipher style of encryption
 func RotationalCipher(plain string, shiftKey int) string {
 	newStr := make([]rune, 0)
 
