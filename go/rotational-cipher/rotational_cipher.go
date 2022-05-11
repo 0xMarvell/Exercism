@@ -1,7 +1,6 @@
 package rotationalcipher
 
 func RotationalCipher(plain string, shiftKey int) string {
-	//panic("Please implement the RotationalCipher function")
 	newStr := make([]rune, 0)
 
 	if shiftKey == 0 || shiftKey == 26 {
