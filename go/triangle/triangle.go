@@ -10,7 +10,7 @@ const (
 	Sca = "Sca" // scalene
 )
 
-// KindFromSides checks the kind of traingle being returned
+// KindFromSides checks the kind of traingle based on the length of its sides.
 func KindFromSides(a, b, c float64) Kind {
 	switch {
 	case a <= 0:
