@@ -9,10 +9,10 @@ func SearchInts(list []int, key int) int {
 
 		if list[middle] == key {
 			return middle
-		} else if list[middle] > key {
-			right = middle - 1
-		} else {
+		} else if key > list[middle] {
 			left = middle + 1
+		} else {
+			right = middle - 1
 		}
 	}
 
