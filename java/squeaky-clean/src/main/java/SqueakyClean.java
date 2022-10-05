@@ -21,7 +21,7 @@ class SqueakyClean {
                 else if(Character.isLetter(ch) == false || (ch >= 'α' && ch <= 'ω'))
                     sb.append("");
                 else
-                    // sb.append(ch);
+                    sb.append(ch);
             }
 
         return sb.toString();
