@@ -1,5 +1,5 @@
 class MicroBlog {
     public String truncate(String input) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return input.codePointCount(0,input.length()) < 6? input: input.substring(0,input.offsetByCodePoints(0,5));
     }
 }
