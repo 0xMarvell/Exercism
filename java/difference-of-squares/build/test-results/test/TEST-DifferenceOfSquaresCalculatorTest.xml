@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DifferenceOfSquaresCalculatorTest" tests="9" skipped="8" failures="0" errors="0" timestamp="2022-10-06T14:22:14" hostname="marvell-HP-Notebook" time="0.027">
+<testsuite name="DifferenceOfSquaresCalculatorTest" tests="9" skipped="8" failures="0" errors="0" timestamp="2022-10-06T18:26:42" hostname="marvell-HP-Notebook" time="0.007">
   <properties/>
-  <testcase name="testDifferenceOfSquaresUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.001">
+  <testcase name="testDifferenceOfSquaresUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
     <skipped/>
   </testcase>
   <testcase name="testSquareOfSumUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.003"/>
-  <testcase name="testSquareOfSumUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.001">
+  <testcase name="testSquareOfSumUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testDifferenceOfSquaresUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.001">
+  <testcase name="testDifferenceOfSquaresUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testSumOfSquaresUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.001">
+  <testcase name="testSumOfSquaresUpToHundred" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
     <skipped/>
   </testcase>
   <testcase name="testSquareOfSumUpToFive" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
@@ -20,7 +20,7 @@
   <testcase name="testDifferenceOfSquaresUpToFive" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testSumOfSquaresUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.001">
+  <testcase name="testSumOfSquaresUpToOne" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
     <skipped/>
   </testcase>
   <testcase name="testSumOfSquaresUpToFive" classname="DifferenceOfSquaresCalculatorTest" time="0.0">
