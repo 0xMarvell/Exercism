@@ -4,6 +4,22 @@ static class Badge
 {
     public static string Print(int? id, string name, string? department)
     {
-        throw new NotImplementedException("Please implement the (static) Badge.Print() method");
+        if (department == null && id == null)
+        {
+            return $"{name} - OWNER";
+        }
+        
+        if (id == null)
+        {
+            return $"{name} - {department?.ToUpper()}";
+        }
+        else if (department == null)
+        {
+            return $"[{id}] - {name} - OWNER";
+        }
+        else
+        {
+            return $"[{id}] - {name} - {department?.ToUpper()}";
+        }
     }
 }
