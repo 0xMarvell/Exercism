@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6jtHELh4I6dCKneIFGLuLbVuz7w8lcVcPFz+d0up8Uw/oc38BIKldPWnR+K5UxdvG1fHD7rAWmoAqnOBxxVFuw==",
+  "dgSpecHash": "k1G97rRw5tzx1b0LaqVE7s5ANcUvsNQEr7kkqkz11tQH/uGVfTK+DF0ldHKnWrrIEnnuw9sJ0m50BiD4IkInog==",
   "success": true,
   "projectFilePath": "/home/marvell/Documents/Code/Go/src/github.com/0xMarvell/Exercism/csharp/need-for-speed/NeedForSpeed.csproj",
   "expectedPackageFiles": [
